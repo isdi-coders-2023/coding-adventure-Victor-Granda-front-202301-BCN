@@ -14,6 +14,8 @@ export const ButtonStyled = styled.button`
   font-size: 1.25rem;
   color: black;
   font-family: "Saira Stencil One";
-  border: none;
-  cursor: pointer;
+
+  @media (min-width: 900px) {
+    height: 57px;
+  }
 `;

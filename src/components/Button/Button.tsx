@@ -1,10 +1,10 @@
 import { ButtonStyled } from "./ButtonStyled";
 
-export interface buttonProps {
+export interface ButtonProps {
   text: string;
 }
 
-const Button = ({ text }: buttonProps): JSX.Element => {
+const Button = ({ text }: ButtonProps): JSX.Element => {
   return <ButtonStyled disabled>{text}</ButtonStyled>;
 };
 
