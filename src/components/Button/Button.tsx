@@ -5,7 +5,7 @@ export interface ButtonProps {
 }
 
 const Button = ({ text }: ButtonProps): JSX.Element => {
-  return <ButtonStyled disabled>{text}</ButtonStyled>;
+  return <ButtonStyled>{text}</ButtonStyled>;
 };
 
 export default Button;

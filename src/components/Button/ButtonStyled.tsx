@@ -2,9 +2,9 @@ import "@fontsource/saira-stencil-one";
 import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-  background-color: ${(props) => props.theme.colors.darkerMain};
-  :active {
-    background-color: ${(props) => props.theme.colors.main};
+  background-color: ${(props) => props.theme.colors.main};
+  :disabled {
+    background-color: ${(props) => props.theme.colors.darkerMain};
   }
   width: 323px;
   height: 40px;
