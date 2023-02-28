@@ -1,19 +1,19 @@
-import styled from "styled-components";
 import "@fontsource/saira-stencil-one";
+import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-  background-color: #92942b;
+  background-color: ${(props) => props.theme.colors.darkerMain};
   :active {
-    background-color: #cccf18;
+    background-color: ${(props) => props.theme.colors.main};
   }
   width: 323px;
   height: 40px;
   left: 19px;
   top: 824px;
-  border-radius: 10px;
-  font-size: 1.25rem;
-  color: black;
-  font-family: "Saira Stencil One";
+  border-radius: ${(props) => props.theme.variables.radius};
+  font-size: ${(props) => props.theme.fonts.buttonFontSize};
+  color: ${(props) => props.theme.colors.mainFontColor};
+  font-family: ${(props) => props.theme.fonts.tittlesFontFamily};
 
   @media (min-width: 900px) {
     height: 57px;
