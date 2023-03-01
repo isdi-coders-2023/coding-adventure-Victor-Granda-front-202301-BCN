@@ -8,21 +8,21 @@ export const EventRegister = (): JSX.Element => {
         <input
           type="email"
           id="email"
-          placeholder="Introduce you email"
+          placeholder="Introduce you email."
         ></input>
 
         <label htmlFor="password">Password</label>
         <input
           type="password"
           id="password"
-          placeholder="Introduce you password"
+          placeholder="Introduce you password."
         ></input>
 
         <label htmlFor="image">Image</label>
         <input
           type="file"
           id="image"
-          placeholder="Introduce an image for your profile"
+          placeholder="Introduce an image for your profile."
         ></input>
       </form>
     </>
