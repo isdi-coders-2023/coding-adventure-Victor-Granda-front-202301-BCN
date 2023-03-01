@@ -11,7 +11,9 @@ const GlobalStyles = createGlobalStyle`
 body {
   padding: 1.5rem;
   background-color: #fff;
-  font-family: ${(props) => props.theme.fonts.textFontFamily};
+  font-family: ${(props) =>
+    props.theme.fonts
+      .textFontFamily}, "Oxygen", "Ubuntu", "Cantarell", "Fira Sans";
   width: 100%;
   min-height: 100vh;
 }

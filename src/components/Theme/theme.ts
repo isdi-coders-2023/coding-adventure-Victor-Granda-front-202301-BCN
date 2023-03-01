@@ -16,7 +16,7 @@ const theme: DefaultTheme = {
   fonts: {
     buttonFontSize: "1.25rem",
     tittlesFontFamily: "Saira Stencil One",
-    textFontFamily: ["Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans"],
+    textFontFamily: "Roboto",
     sizes: {
       smallFont: "0.9375rem",
       mediumFont: "1rem",

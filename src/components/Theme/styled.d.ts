@@ -17,7 +17,7 @@ declare module "styled-components" {
     fonts: {
       buttonFontSize: string;
       tittlesFontFamily: string;
-      textFontFamily: string[];
+      textFontFamily: string;
       sizes: {
         smallFont: string;
         mediumFont: string;
