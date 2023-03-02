@@ -45,7 +45,10 @@ const EventRegister = (): JSX.Element => {
         </label>
       </EventRegisterStyled>
 
-      <Button text={buttonText} type={buttonType} disabled={isDisabled} />
+      <div className="button__container">
+        <Button text={buttonText} type={buttonType} disabled={isDisabled} />
+        <span className="required">Sorry, something went wrong</span>
+      </div>
     </>
   );
 };

@@ -7,12 +7,7 @@ export interface ButtonProps {
 }
 
 const Button = ({ text, type, disabled }: ButtonProps): JSX.Element => {
-  return (
-    <div className="button__container">
-      <ButtonStyled>{text}</ButtonStyled>
-      <span className="required">Sorry, something went wrong</span>
-    </div>
-  );
+  return <ButtonStyled>{text}</ButtonStyled>;
 };
 
 export default Button;
