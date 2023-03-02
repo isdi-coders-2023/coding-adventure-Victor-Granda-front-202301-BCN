@@ -9,7 +9,7 @@ describe("Given a button component", () => {
       const expectedText = "a button";
       render(
         <ThemeProvider theme={theme}>
-          <Button text={expectedText} />;
+          <Button text={expectedText} type={"submit"} disabled={false} />;
         </ThemeProvider>
       );
 

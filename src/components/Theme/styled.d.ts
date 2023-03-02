@@ -12,6 +12,8 @@ declare module "styled-components" {
       mainFontColor: string;
       secondaryFontColor: string;
       warningColor: string;
+      labelBackground: string;
+      background: string;
     };
 
     fonts: {
@@ -22,7 +24,11 @@ declare module "styled-components" {
         smallFont: string;
         mediumFont: string;
         bigFont: string;
-        tittleFont: string;
+        mobileH2Font: string;
+        desktopH2Font: string;
+      };
+      weight: {
+        h2: string;
       };
     };
   }

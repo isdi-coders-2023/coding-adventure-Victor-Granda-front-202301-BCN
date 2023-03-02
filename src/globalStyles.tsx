@@ -10,12 +10,14 @@ const GlobalStyles = createGlobalStyle`
 }
 body {
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.colors.background}; ;
+  color: ${(props) => props.theme.colors.main};
   font-family: ${(props) =>
     props.theme.fonts
       .textFontFamily}, "Oxygen", "Ubuntu", "Cantarell", "Fira Sans";
   width: 100%;
   min-height: 100vh;
+
 }
 a {
   text-decoration: none;
@@ -24,7 +26,16 @@ a {
 h1,h2{
   padding: 0;
   margin: 0;
-  font-size: ${(props) => props.theme.fonts.sizes.tittleFont};
+  font-family: ${(props) => props.theme.fonts.tittlesFontFamily} ;
+  font-weight: ${(props) => props.theme.fonts.weight.h2};
+  
+  @media screen and (min-width: 987px) {
+  h2 {
+  font-family: ${(props) => props.theme.fonts.sizes.desktopH2Font} ;
+    
+    }
+
+  }
 }
 ol, ul, li {
   list-style: none;
@@ -38,5 +49,24 @@ button{
   cursor: pointer;
   font-family: inherit;
 }
+
+label{
+  color: ${(props) => props.theme.colors.secondaryFontColor}
+}
+
+.button__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4.68rem;
+}
+
+.required{
+  color: ${(props) => props.theme.colors.warningColor};
+     
+}
+
+
 `;
 export default GlobalStyles;
